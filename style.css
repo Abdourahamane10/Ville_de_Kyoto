@@ -248,14 +248,6 @@ button, input {
   margin-bottom: 60px;
 }
 
-.activity-1 {
-  /* background-image: var(--dark-right); */
-}
-
-.activity-2 {
-  background-image: var(--dark-left);
-}
-
 .activity-container {
   max-width: 825px;
   min-height: 300px;
@@ -342,3 +334,37 @@ button, input {
     padding: 0 25px 25px;
   }
 }
+
+/* Parallax section */
+.parallax {
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(ressources/parallax-large-flou.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--light-white);
+}
+
+.japanese-text {
+  font-size: var(--fs-64);
+  line-height: 1.2;
+}
+
+.parallax-text {
+  font-size: var(--fs-26);
+}
+
+ @media (max-width: 600px) {
+  .parallax {
+    min-height: 200px;
+  }
+  .japanese-text {
+    font-size: var(--fs-40);
+  }
+  .parallax-text {
+    font-size: var(--fs-18);
+  }
+ }
